@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "esnext", //ブラウザで動かす時はesnext。nodeで動かす時はcommonjs
+    "lib": ["esnext","dom"], //nodeで動かす時、domの型定義は不要なので"esnext"とだけ指定する。
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "charset": "utf8",
+    "newLine": "LF",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
